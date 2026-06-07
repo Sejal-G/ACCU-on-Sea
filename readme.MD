@@ -395,19 +395,3 @@ A service can appear healthy when observing P50 while simultaneously accumulatin
 This is one of the reasons long-running performance issues are difficult to diagnose.
 
 The machine is experiencing allocator pressure even when the average says everything is fine.
-
----
-
-## Connection to the Talk
-
-This experiment motivates the next section:
-
-> The average looks healthy.
->
-> The tail is a disaster.
-
-The allocator is not a single fast operation.
-
-It is a hierarchy of fast paths and increasingly expensive fallback paths.
-
-Percentile measurements reveal that hierarchy.
